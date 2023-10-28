@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= @flat.name %></h5>
+          <p class="card-text"><%= @flat.address %></p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">A bit more about this flat...</h5>
+          <p class="card-text"><%= @flat.description %></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22383.965061683783!2d-73.61438066190185!3d45.46989189201717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1698457657888!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="card-img"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Book this place!</h5>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">From : </span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">To : </span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <a href="#" class="btn btn-success" type="button">Book</a>
+        </div>
+      </div>
+      <div class="card  mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Details</h5>
+          <div class="price-guest d-flex flex-row ">
+            <p class="card-text me-4"><%= @flat.number_of_guests %> people</p>
+            <p class="card-text me-4"><%= @flat.price_per_night %> <i class="fa-solid fa-euro-sign"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+          <div class="d-flex flex-row justify-content-between">
+            <h5 class="card-title">Shared</h5>
+            <p class="card-text me-4"><i class="fa-brands fa-square-facebook me-1"></i><i class="fa-brands fa-square-twitter me-1"></i><i class="fa-brands fa-square-pinterest me-1"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
